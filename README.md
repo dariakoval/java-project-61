@@ -6,5 +6,4 @@
 Demo Project
 
 Game: "Parity check":
-
 https://asciinema.org/connect/9a705bd1-7513-406b-8842-49abd20c787b
