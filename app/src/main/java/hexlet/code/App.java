@@ -16,7 +16,7 @@ public class App {
                 break;
             case "2":
                 Even.parityCheck();
-               break;
+                break;
            // case "3":
                 //Calc.calculateExpression();
                // break;
