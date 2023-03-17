@@ -1,4 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Random;
+
 import java.util.Scanner;
 public class Even {
     public static void parityCheck(String userName) {
