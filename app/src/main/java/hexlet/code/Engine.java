@@ -1,7 +1,5 @@
 package hexlet.code;
-
 import java.util.Scanner;
-
 public class Engine {
     public static final int MAX_ROUNDS = 3;
     public static void doCommonLogic(String[] questions, String[] answers, String condition) {

@@ -1,6 +1,6 @@
 package hexlet.code;
+
 import hexlet.code.games.Even;
-import hexlet.code.games.Calc;
 import java.util.Scanner;
 public class App {
     static final String CHOICE_FOR_GREET = "1";

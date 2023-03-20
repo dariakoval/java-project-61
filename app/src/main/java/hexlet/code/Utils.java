@@ -9,7 +9,7 @@ public class Utils {
     }
     public static String getRandomOperation() {  // возвращает рандомную операцию
         String[] operations = {"+", "-", "*"};
-        int a = (int) ( Math.random() * operations.length);
+        int a = (int) (Math.random() * operations.length);
         return operations[a];
     }
 
@@ -28,15 +28,15 @@ public class Utils {
 
     public static int calcResult(int num1, int num2, String operation) { // считает результат выражения
         int result;
-        switch (operation){
+        switch (operation) {
             case "+":
-                result = num1+num2;
+                result = num1 + num2;
                 break;
             case "-":
-                result = num1-num2;
+                result = num1 - num2;
                 break;
             default:
-                result = num1*num2;
+                result = num1 * num2;
         }
         return result;
 
