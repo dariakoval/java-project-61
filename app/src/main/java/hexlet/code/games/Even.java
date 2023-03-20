@@ -1,12 +1,12 @@
 package hexlet.code.games;
-import hexlet.code.Random;
+import hexlet.code.Utils;
 import hexlet.code.Number;
 import java.util.Scanner;
 public class Even {
     public static void parityCheck() {
-        var question1 = Random.getNext();
-        var question2 = Random.getNext();
-        var question3 = Random.getNext();
+        var question1 = Utils.getNext();
+        var question2 = Utils.getNext();
+        var question3 = Utils.getNext();
         int[] numbers = new int[3];
         numbers[0] = question1;
         numbers[1] = question2;

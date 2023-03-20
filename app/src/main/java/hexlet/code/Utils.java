@@ -1,5 +1,5 @@
 package hexlet.code;
-public class Random {
+public class Utils {
     public static int getNext() {
         return (int) (Math.random() * 100);
     }
