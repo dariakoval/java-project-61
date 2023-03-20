@@ -9,5 +9,10 @@
 [![asciicast](https://asciinema.org/a/aU6x9m3Zz5LBsIPVoAQnL3T69.svg)](https://asciinema.org/a/aU6x9m3Zz5LBsIPVoAQnL3T69)
 
 
+## Demo game: Calc
+[![asciicast](https://asciinema.org/a/YsPYNNgJYTWvLnQ6noPEALIIl.svg)](https://asciinema.org/a/YsPYNNgJYTWvLnQ6noPEALIIl)
+
+
+
 
 
