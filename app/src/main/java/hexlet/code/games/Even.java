@@ -15,4 +15,3 @@ public class Even {
         Engine.doCommonLogic(questions, answers, condition);
     }
 }
-
