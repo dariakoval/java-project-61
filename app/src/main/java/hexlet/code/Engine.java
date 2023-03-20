@@ -12,27 +12,25 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
 
         System.out.println(condition);
-        var i = 0; //индекс для массива String[] questions
-        var j = 0; //индекс для массива String[] answers
-        while (i < MAX_ROUNDS) {
+        int gameSuccess = 0;
+        for (int i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + questions[i]);
             System.out.print("Your answer: ");
             String answer = scanner.next();
-            if (answer.equals(answers[2]) && i == 2) {
-                System.out.println("Correct!\nCongratulations, userName!");
-                i++;
-            } else if (answer.equals(answers[j])) {
+            if (answer.equals(answers[i])) {
                 System.out.println("Correct!");
-                i++;
-                j++;
+                gameSuccess++;
             } else {
                 System.out.println("'"
                         + answer
                         + "' is wrong answer ;(. Correct answer was '"
-                        + answers[j] + "'.\nLet's try again, userName!");
-                i += 3;
-                j += 3;
+                        + answers[i] + "'.");
+                System.out.println("Let's try again, " + userName + " !");
+                break;
             }
+        }
+        if (gameSuccess == MAX_ROUNDS) {
+            System.out.println("Congratulations," + userName + " !");
         }
         scanner.close();
     }

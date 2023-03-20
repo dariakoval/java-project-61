@@ -3,6 +3,10 @@ import hexlet.code.games.Even;
 
 import java.util.Scanner;
 public class App {
+    static final String CHOICE_FOR_GREET = "1";
+    static final String CHOICE_FOR_EVEN = "2";
+   // static final String CHOICE_FOR_CALC = "3";
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,13 +18,13 @@ public class App {
         System.out.print("Your choice: ");
         String choice = scanner.next();
         switch (choice) {
-            case "1":
+            case CHOICE_FOR_GREET:
                 Cli.greeting();
                 break;
-            case "2":
+            case CHOICE_FOR_EVEN:
                 Even.parityCheck();
                 break;
-           // case "3":
+           // case "CHOICE_FOR_CALC":
                 //Calc.calculateExpression();
                // break;
             default:
