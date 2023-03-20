@@ -1,7 +1,8 @@
 package hexlet.code;
 public class Utils {
-    public static int getNext() {
-        return (int) (Math.random() * 100);
+    static final int HUNDRED = 100; // ограничивает диапазон случайных чисел до десятков
+    public static int getNextRandom() {
+        return (int) (Math.random() * HUNDRED);
     }
 
 }

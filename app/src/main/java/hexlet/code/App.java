@@ -4,12 +4,15 @@ import hexlet.code.games.Even;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        Scanner scanner0 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the game number and press Enter."
-                + "\n1 - Greet\n2 - Even\n3 - Calc\n0 - Exit");
+        System.out.println("Please enter the game number and press Enter.");
+        System.out.println("1 - Greet");
+        System.out.println("2 - Even");
+        System.out.println("3 - Calc");
+        System.out.println("0 - Exit");
         System.out.print("Your choice: ");
-        String choice = scanner0.next();
+        String choice = scanner.next();
         switch (choice) {
             case "1":
                 Cli.greeting();
@@ -21,7 +24,7 @@ public class App {
                 //Calc.calculateExpression();
                // break;
             default:
-                scanner0.close();
+                scanner.close();
         }
     }
 }
