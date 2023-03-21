@@ -28,7 +28,7 @@ public class Engine {
             }
         }
         if (gameSuccess == MAX_ROUNDS) {
-            System.out.println("Congratulations," + userName + " !");
+            System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
     }
