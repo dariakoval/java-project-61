@@ -49,7 +49,7 @@ public class Utils {
         int i = a % b;
         return getGcd(b, i);
     }
-    public static String[] getArrayOfProgression() {
+    public static String[] getArrayOfProgression() { // возвращает массив из арифметической прогрессии
         int firstNumber = getNextRandom();
         int step = (int) (Math.random() * TEN);
         int length = TEN;
@@ -60,7 +60,7 @@ public class Utils {
         }
         return  progression;
     }
-    public static boolean isSimple(int number) {
+    public static boolean isSimple(int number) { // проверяет, простое ли число
         if (number < 2) {
             return false;
         }
