@@ -1,8 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/dariakoval/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/dariakoval/java-project-61/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](codeclimate.com/github/dariakoval/java-project-61/maintainability)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
 
 ## Demo game: Even
 
