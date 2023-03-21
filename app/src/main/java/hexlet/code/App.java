@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Prog;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 public class App {
@@ -11,7 +12,7 @@ public class App {
     static final String CHOICE_FOR_CALC = "3";
     static final String CHOICE_FOR_GCD = "4";
     static final String CHOICE_FOR_PROG = "5";
-
+    static final String CHOICE_FOR_PRIME = "6";
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,6 +22,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
         String choice = scanner.next();
@@ -39,6 +41,9 @@ public class App {
                 break;
             case CHOICE_FOR_PROG:
                 Prog.findMissElement();
+                break;
+            case CHOICE_FOR_PRIME:
+                Prime.numberCheck();
                 break;
             default:
                 scanner.close();
