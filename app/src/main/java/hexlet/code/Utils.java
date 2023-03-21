@@ -41,4 +41,11 @@ public class Utils {
         return result;
 
     }
+    public static int getGcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        int i = a % b;
+        return getGcd(b, i);
+    }
 }
