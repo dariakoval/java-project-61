@@ -1,10 +1,5 @@
 package hexlet.code;
-
-import hexlet.code.games.Even;
-import hexlet.code.games.Gcd;
-import hexlet.code.games.Prog;
-import hexlet.code.games.Prime;
-
+import hexlet.code.games.*;
 import java.util.Scanner;
 public class App {
     static final String CHOICE_FOR_GREET = "1";
@@ -13,6 +8,7 @@ public class App {
     static final String CHOICE_FOR_GCD = "4";
     static final String CHOICE_FOR_PROG = "5";
     static final String CHOICE_FOR_PRIME = "6";
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,6 +22,7 @@ public class App {
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
         String choice = scanner.next();
+
         switch (choice) {
             case CHOICE_FOR_GREET:
                 Cli.greeting();
@@ -34,7 +31,7 @@ public class App {
                 Even.parityCheck();
                 break;
             case CHOICE_FOR_CALC:
-                Utils.getArrayOfRandomOperation();
+                Calc.calculateExpression();
                 break;
             case CHOICE_FOR_GCD:
                 Gcd.findGcd();
