@@ -22,16 +22,15 @@ public class Prime {
 
     public static void checkNumber() {
         String condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        String[] questions = new String[Engine.MAX_ROUNDS];
-        String[] answers = new String[Engine.MAX_ROUNDS];
+        String[][] questionsAnswers = new String[Engine.ROWS][Engine.MAX_ROUNDS];
 
         for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
             int number = Utils.getNextRandom();
 
-            questions[i] = Integer.toString(number);
-            answers[i] = (isPrime(number)) ? "yes" : "no";
+            questionsAnswers[Engine.ROW_FOR_QUESTIONS][i] = Integer.toString(number);
+            questionsAnswers[Engine.ROW_FOR_ANSWERS][i] = (isPrime(number)) ? "yes" : "no";
         }
 
-        Engine.doCommonLogic(questions, answers, condition);
+        Engine.doCommonLogic(questionsAnswers, condition);
     }
 }

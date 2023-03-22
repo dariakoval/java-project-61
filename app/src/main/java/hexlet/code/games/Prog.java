@@ -9,8 +9,7 @@ public class Prog {
 
     public static void findMissElement() {
         String condition = "What number is missing in the progression?";
-        String[] questions = new String[Engine.MAX_ROUNDS];
-        String[] answers = new String[Engine.MAX_ROUNDS];
+        String[][] questionsAnswers = new String[Engine.ROWS][Engine.MAX_ROUNDS];
 
         for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
             int firstNumber = Utils.getNextRandom();
@@ -21,10 +20,10 @@ public class Prog {
             String element = progression[a];
             progression[a] = "..";
 
-            questions[i] = String.join(" ", progression);
-            answers[i] = element;
+            questionsAnswers[Engine.ROW_FOR_QUESTIONS][i] = String.join(" ", progression);
+            questionsAnswers[Engine.ROW_FOR_ANSWERS][i] = element;
         }
 
-        Engine.doCommonLogic(questions, answers, condition);
+        Engine.doCommonLogic(questionsAnswers, condition);
     }
 }
