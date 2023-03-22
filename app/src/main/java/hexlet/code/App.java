@@ -1,10 +1,12 @@
 package hexlet.code;
+
 import java.util.Scanner;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Prog;
 import hexlet.code.games.Prime;
+
 public class App {
     static final String CHOICE_FOR_GREET = "1";
     static final String CHOICE_FOR_EVEN = "2";
@@ -28,26 +30,14 @@ public class App {
         String choice = scanner.next();
 
         switch (choice) {
-            case CHOICE_FOR_GREET:
-                Cli.greeting();
-                break;
-            case CHOICE_FOR_EVEN:
-                Even.checkParity();
-                break;
-            case CHOICE_FOR_CALC:
-                Calc.calculateExpression();
-                break;
-            case CHOICE_FOR_GCD:
-                Gcd.findGcd();
-                break;
-            case CHOICE_FOR_PROG:
-                Prog.findMissElement();
-                break;
-            case CHOICE_FOR_PRIME:
-                Prime.checkNumber();
-                break;
-            default:
-                scanner.close();
+            case CHOICE_FOR_GREET -> Cli.greeting();
+            case CHOICE_FOR_EVEN -> Even.checkParity();
+            case CHOICE_FOR_CALC -> Calc.calculateExpression();
+            case CHOICE_FOR_GCD -> Gcd.findGcd();
+            case CHOICE_FOR_PROG -> Prog.findMissElement();
+            case CHOICE_FOR_PRIME -> Prime.checkNumber();
+            default -> scanner.close();
         }
+
     }
 }
