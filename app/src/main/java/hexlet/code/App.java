@@ -32,7 +32,7 @@ public class App {
                 Cli.greeting();
                 break;
             case CHOICE_FOR_EVEN:
-                Even.parityCheck();
+                Even.checkParity();
                 break;
             case CHOICE_FOR_CALC:
                 Calc.calculateExpression();
@@ -44,7 +44,7 @@ public class App {
                 Prog.findMissElement();
                 break;
             case CHOICE_FOR_PRIME:
-                Prime.numberCheck();
+                Prime.checkNumber();
                 break;
             default:
                 scanner.close();

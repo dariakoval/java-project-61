@@ -5,7 +5,7 @@ public class Even {
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
-    public static void parityCheck() {
+    public static void checkParity() {
         String condition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         String[] questions = new String[Engine.MAX_ROUNDS];
         String[] answers = new String[Engine.MAX_ROUNDS];

@@ -13,7 +13,7 @@ public class Prime {
         }
         return true;
     }
-    public static void numberCheck() {
+    public static void checkNumber() {
         String condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         String[] questions = new String[Engine.MAX_ROUNDS];
         String[] answers = new String[Engine.MAX_ROUNDS];
