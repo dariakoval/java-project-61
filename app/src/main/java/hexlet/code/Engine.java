@@ -10,14 +10,14 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
 
         System.out.println(condition);
-        int gameSuccess = 0;
+        int roundsCount = 0;
         for (int i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + questions[i]);
             System.out.print("Your answer: ");
             String answer = scanner.next();
             if (answer.equals(answers[i])) {
                 System.out.println("Correct!");
-                gameSuccess++;
+                roundsCount++;
             } else {
                 System.out.println("'"
                         + answer
@@ -27,7 +27,7 @@ public class Engine {
                 break;
             }
         }
-        if (gameSuccess == MAX_ROUNDS) {
+        if (roundsCount == MAX_ROUNDS) {
             System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
