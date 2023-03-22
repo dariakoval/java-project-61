@@ -25,9 +25,7 @@ public class Engine {
                 System.out.println("Correct!");
                 roundsCount++;
             } else {
-                System.out.println("'"
-                        + answer
-                        + "' is wrong answer ;(. Correct answer was '"
+                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + answers[i] + "'.");
                 System.out.println("Let's try again, " + userName + "!");
                 break;
