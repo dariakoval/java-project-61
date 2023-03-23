@@ -9,7 +9,7 @@ public class Calc {
             case "+" -> num1 + num2;
             case "-" -> num1 - num2;
             default -> num1 * num2;
-        }
+        };
     }
 
     public static void calculateExpression() {
