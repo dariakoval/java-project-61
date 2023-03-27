@@ -6,21 +6,15 @@ import hexlet.code.Utils;
 public class Progression {
     static final int PROGRESSSION_LENGTH = 10;
 
-    public static String[] getArrayOfProgression(int firstNumber, int step, int length) {
-        String[] progression = new String[length];
-        progression[0] = Integer.toString(firstNumber);
-
-        for (int i = 1; i < length; i++) {
-            progression[i] = Integer.toString(Integer.parseInt(progression[i - 1]) + step);
-        }
-
-        return  progression;
-    }
-
     public static void findMissElement() {
         String condition = "What number is missing in the progression?";
-        String[][] questionsAnswers = new String[Engine.MAX_ROUNDS][Engine.MAX_ROUNDS];
+        String[][] questionsAnswers = createArrayForGame();
 
+        Engine.doCommonLogic(questionsAnswers, condition);
+    }
+
+    public static String[][] createArrayForGame() {
+        String[][] questionsAnswers = new String[Engine.MAX_ROUNDS][2];
         for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
             int firstNumber = Utils.getNextRandom();
             int step = (int) (Math.random() * PROGRESSSION_LENGTH);
@@ -33,7 +27,17 @@ public class Progression {
             questionsAnswers[i][Engine.COLUMN_FOR_QUESTIONS] = String.join(" ", progression);
             questionsAnswers[i][Engine.COLUMN_FOR_ANSWERS] = element;
         }
+        return  questionsAnswers;
+    }
 
-        Engine.doCommonLogic(questionsAnswers, condition);
+    public static String[] getArrayOfProgression(int firstNumber, int step, int length) {
+        String[] progression = new String[length];
+        progression[0] = Integer.toString(firstNumber);
+
+        for (int i = 1; i < length; i++) {
+            progression[i] = Integer.toString(Integer.parseInt(progression[i - 1]) + step);
+        }
+
+        return  progression;
     }
 }

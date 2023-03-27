@@ -4,6 +4,24 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Prime {
+    public static void checkNumber() {
+        String condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        String[][] questionsAnswers = createArrayForGame();
+
+        Engine.doCommonLogic(questionsAnswers, condition);
+    }
+
+    public static String[][] createArrayForGame() {
+        String[][] questionsAnswers = new String[Engine.MAX_ROUNDS][2];
+        for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
+            int number = Utils.getNextRandom();
+
+            questionsAnswers[i][Engine.COLUMN_FOR_QUESTIONS] = Integer.toString(number);
+            questionsAnswers[i][Engine.COLUMN_FOR_ANSWERS] = (isPrime(number)) ? "yes" : "no";
+        }
+        return  questionsAnswers;
+    }
+
     public static boolean isPrime(int number) {
         if (number < 2) {
             return false;
@@ -18,19 +36,5 @@ public class Prime {
         }
 
         return true;
-    }
-
-    public static void checkNumber() {
-        String condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        String[][] questionsAnswers = new String[Engine.MAX_ROUNDS][Engine.MAX_ROUNDS];
-
-        for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
-            int number = Utils.getNextRandom();
-
-            questionsAnswers[i][Engine.COLUMN_FOR_QUESTIONS] = Integer.toString(number);
-            questionsAnswers[i][Engine.COLUMN_FOR_ANSWERS] = (isPrime(number)) ? "yes" : "no";
-        }
-
-        Engine.doCommonLogic(questionsAnswers, condition);
     }
 }
