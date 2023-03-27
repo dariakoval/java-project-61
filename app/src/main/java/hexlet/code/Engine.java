@@ -14,17 +14,19 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println(condition);
 
+        int roundsCount = 0;
+
         for (int i = 0; i < MAX_ROUNDS; i++) {
             System.out.println("Question: " + questions[i][i]);
             System.out.print("Your answer: ");
             String answer = scanner.next();
 
-            if (answer.equals(answers[MAX_ROUNDS][MAX_ROUNDS])) {
+            if (answer.equals(answers[i][i]) && roundsCount == MAX_ROUNDS - 1) {
                 System.out.println("Correct!");
                 System.out.println("Congratulations, " + userName + "!");
-                break;
             } else if (answer.equals(answers[i][i])) {
                 System.out.println("Correct!");
+                roundsCount++;
             } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
                         + answers[i][i] + "'.");
