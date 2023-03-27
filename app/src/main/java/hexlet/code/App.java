@@ -4,7 +4,7 @@ import java.util.Scanner;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Gcd;
-import hexlet.code.games.Prog;
+import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 
 public class App {
@@ -34,7 +34,7 @@ public class App {
             case CHOICE_FOR_EVEN -> Even.checkParity();
             case CHOICE_FOR_CALC -> Calc.calculateExpression();
             case CHOICE_FOR_GCD -> Gcd.findGcd();
-            case CHOICE_FOR_PROG -> Prog.findMissElement();
+            case CHOICE_FOR_PROG -> Progression.findMissElement();
             case CHOICE_FOR_PRIME -> Prime.checkNumber();
             default -> scanner.close();
         }

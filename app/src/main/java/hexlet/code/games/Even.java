@@ -10,15 +10,16 @@ public class Even {
 
     public static void checkParity() {
         String condition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        String[][] questionsAnswers = new String[Engine.ROWS][Engine.MAX_ROUNDS];
+        String[][] questions = new String[Engine.MAX_ROUNDS][Engine.MAX_ROUNDS];
+        String[][] answers = new String[Engine.MAX_ROUNDS][Engine.MAX_ROUNDS];
 
         for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
             int number = Utils.getNextRandom();
 
-            questionsAnswers[Engine.ROW_FOR_QUESTIONS][i] = Integer.toString(number);
-            questionsAnswers[Engine.ROW_FOR_ANSWERS][i] = (isEven(number)) ? "yes" : "no";
+            questions[i][i] = Integer.toString(number);
+            answers[i][i] = (isEven(number)) ? "yes" : "no";
         }
 
-        Engine.doCommonLogic(questionsAnswers, condition);
+        Engine.doCommonLogic(questions, answers, condition);
     }
 }
