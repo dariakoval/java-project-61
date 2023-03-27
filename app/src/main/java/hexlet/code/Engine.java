@@ -35,7 +35,7 @@ public class Engine {
         if (roundsCount == MAX_ROUNDS) {
             System.out.println("Congratulations, " + userName + "!");
         }
-        
+
         scanner.close();
     }
 }
