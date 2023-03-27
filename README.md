@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
 
 ## About the project
-This console application implemented by scratch on version 17 of the Java SE Platform.
+This console application is implemented on the Java SE version 17 platform.
 
 ## Description
 This application contains five mini games:
@@ -15,7 +15,7 @@ This application contains five mini games:
 * **"Is it a prime number?"**
 
 ## How to play
-To start the game you need to execute the command `make run-dist` from the root directory app/. Then the user need to enter the game number and their name. After the welcome message the user will be able to read the rules of the selected game.
+To run the game, the user needs to execute the command `make run-dist` from the root directory app/. Then the user needs to enter the game number and their name. After the welcome message the user will be able to read the rules of the selected game.
 Each game has three rounds. The user must give the correct answer to three questions in a row. After a successful game, the terminal displays a message with congratulations and the game ends. If the user enters an incorrect answer, the game ends.
 
 *To see more about gameplay go to asciinemas.*
