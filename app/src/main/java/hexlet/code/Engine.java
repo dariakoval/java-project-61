@@ -21,10 +21,7 @@ public class Engine {
             System.out.print("Your answer: ");
             String answer = scanner.next();
 
-            if (answer.equals(answers[i][i]) && roundsCount == MAX_ROUNDS - 1) {
-                System.out.println("Correct!");
-                System.out.println("Congratulations, " + userName + "!");
-            } else if (answer.equals(answers[i][i])) {
+            if (answer.equals(answers[i][i])) {
                 System.out.println("Correct!");
                 roundsCount++;
             } else {
@@ -35,6 +32,9 @@ public class Engine {
             }
         }
 
+        if (roundsCount == MAX_ROUNDS) {
+            System.out.println("Congratulations, " + userName + "!");
+        }
         scanner.close();
     }
 }
