@@ -16,7 +16,6 @@ public class App {
     private static final String CHOICE_FOR_PRIME = "6";
     private static final String CHOICE_FOR_EXIT = "0";
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
