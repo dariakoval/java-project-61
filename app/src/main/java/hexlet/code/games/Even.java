@@ -4,21 +4,25 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Even {
-    public static void checkParity() {
-        String condition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        String[][] questionsAnswers = createArrayForGame();
+    private static final int MIN = 1;
+    private static final int MAX = 100;
+    private static final String DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
-        Engine.doCommonLogic(questionsAnswers, condition);
+    public static void checkParity() {
+        String[][] questionsAnswers = createArrayForGame();
+        Engine.doCommonLogic(questionsAnswers, DESCRIPTION);
     }
 
     public static String[][] createArrayForGame() {
         String[][] questionsAnswers = new String[Engine.MAX_ROUNDS][2];
+
         for (int i = 0; i < Engine.MAX_ROUNDS; i++) {
-            int number = Utils.getNextRandom();
+            int number = Utils.generateNumber(MIN, MAX);
 
             questionsAnswers[i][Engine.COLUMN_FOR_QUESTIONS] = Integer.toString(number);
             questionsAnswers[i][Engine.COLUMN_FOR_ANSWERS] = (isEven(number)) ? "yes" : "no";
         }
+
         return  questionsAnswers;
     }
 

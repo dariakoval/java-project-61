@@ -8,12 +8,14 @@ import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 
 public class App {
-    static final String CHOICE_FOR_GREET = "1";
-    static final String CHOICE_FOR_EVEN = "2";
-    static final String CHOICE_FOR_CALC = "3";
-    static final String CHOICE_FOR_GCD = "4";
-    static final String CHOICE_FOR_PROG = "5";
-    static final String CHOICE_FOR_PRIME = "6";
+    private static final String CHOICE_FOR_GREET = "1";
+    private static final String CHOICE_FOR_EVEN = "2";
+    private static final String CHOICE_FOR_CALC = "3";
+    private static final String CHOICE_FOR_GCD = "4";
+    private static final String CHOICE_FOR_PROG = "5";
+    private static final String CHOICE_FOR_PRIME = "6";
+    private static final String CHOICE_FOR_EXIT = "0";
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +38,8 @@ public class App {
             case CHOICE_FOR_GCD -> Gcd.findGcd();
             case CHOICE_FOR_PROG -> Progression.findMissElement();
             case CHOICE_FOR_PRIME -> Prime.checkNumber();
-            default -> scanner.close();
+            case CHOICE_FOR_EXIT -> System.out.println("Goodbye!");
+            default -> System.out.println("Invalid choice. Try again.");
         }
 
     }
