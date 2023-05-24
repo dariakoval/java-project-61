@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
 
 ## About the project
-This project is called "Mind games".
+This project is called "Brain Games".
 This console application is implemented on the Java SE version 17 platform.
 
 ## Description
