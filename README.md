@@ -32,19 +32,30 @@ Each game has three rounds. The user must give the correct answer to three quest
 ## Asciinema for game: Prime
 [![asciicast](https://asciinema.org/a/NHiG6NwTQzhuaSVYTbaVjxCay.svg)](https://asciinema.org/a/NHiG6NwTQzhuaSVYTbaVjxCay)
 
+## Requirements
+* JDK 17
+* Gradle 7.4
+* GNU Make
+* 
+## Technology stack
+Java, Gradle, GNU Make, Checkstyle, Code Climate.
+
+## Setup
+```bash
+make setup
+```
+
 ## Build
 ```bash
 make build
 ```
 
 ## Run
-
 ```bash
 make run-dist
 ```
 
 ## Test
-
 ```bash
 make test
 ```
