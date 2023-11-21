@@ -1,11 +1,7 @@
-## Hexlet tests and linter status:
-[![Actions Status](https://github.com/dariakoval/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/dariakoval/java-project-61/actions)
+# Brain Games CLI Utility
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
-
-## About the project
-This project is called "Brain Games".
-This console application is implemented on the Java SE version 17 platform.
+## Tests and linter status
+[![Actions Status](https://github.com/dariakoval/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/dariakoval/java-project-61/actions)      [![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
 
 ## Description
 This application contains five mini games:
@@ -35,3 +31,20 @@ Each game has three rounds. The user must give the correct answer to three quest
 
 ## Asciinema for game: Prime
 [![asciicast](https://asciinema.org/a/NHiG6NwTQzhuaSVYTbaVjxCay.svg)](https://asciinema.org/a/NHiG6NwTQzhuaSVYTbaVjxCay)
+
+## Build
+```bash
+make build
+```
+
+## Run
+
+```bash
+make run-dist
+```
+
+## Test
+
+```bash
+make test
+```
