@@ -36,7 +36,7 @@ Each game has three rounds. The user must give the correct answer to three quest
 * JDK 17
 * Gradle 7.4
 * GNU Make
-* 
+
 ## Technology stack
 Java, Gradle, GNU Make, Checkstyle, Code Climate.
 
@@ -53,9 +53,4 @@ make build
 ## Run
 ```bash
 make run-dist
-```
-
-## Test
-```bash
-make test
 ```
