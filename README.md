@@ -1,7 +1,7 @@
 # Brain Games CLI Utility
 
 ## Tests and linter status
-[![Actions Status](https://github.com/dariakoval/java-project-61/workflows/hexlet-check/badge.svg)](https://github.com/dariakoval/java-project-61/actions)      [![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
+[![Java CI](https://github.com/dariakoval/java-project-61/workflows/generate.yml/badge.svg)](https://github.com/dariakoval/java-project-61/actions)      [![Maintainability](https://api.codeclimate.com/v1/badges/fe97f0be1e7c92a35a7b/maintainability)](https://codeclimate.com/github/dariakoval/java-project-61/maintainability)
 
 ## Description
 This application contains five mini games:
