@@ -52,5 +52,6 @@ make build
 
 ## Run
 ```bash
+cd app
 make run-dist
 ```
